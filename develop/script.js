@@ -10,6 +10,12 @@ function writePassword() {
 
 }
 
+// Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
 document.getElementById("generate").onclick = function () {
   var userInput = prompt("How many characters?");
   if (userInput >=8 && userInput <=128) {
@@ -83,9 +89,3 @@ function getRandomSymbol() {
 const symbols = '!@#$%^&*(){}[]=<>/,.'
 return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
-// Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
